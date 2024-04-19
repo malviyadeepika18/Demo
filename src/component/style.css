@@ -1,0 +1,460 @@
+  
+
+.Menu{
+    background-color: rgb(236, 236, 241);
+    color: rgb(20, 20, 20)!important;
+    height: 123px;
+    /* margin-top: 2px; */
+}
+
+.nav-link{
+    color: white;
+
+}
+.Banner{
+    /* border: 1px solid black; */
+    height: 400px;
+    background-color: rgb(12, 12, 12);
+
+}
+.Section2{
+ 
+    text-align: center;
+    padding: 56px 9px 0 6px;
+}
+
+.MidSection{
+    border: 1px solid black;
+    
+}
+.imgSec{
+    /* border: 1px solid black; */
+    height: 339px;
+    color: black;
+}
+.FestivImg{
+    width: 92%;
+    height:338px;
+}
+.footerS{
+    border: 1px solid black;
+    background-color: rgb(67, 90, 67);
+    height: 300px;
+    color: white;
+}
+.Links{
+    border: 1px solid black;
+    background-color: rgb(104, 176, 104);
+    height: 50px;
+    color: white;
+}
+.iconImg{
+    width: 64%;
+    height: 175px;
+    margin-top:61px;
+}
+.logo{
+    width: 10%;
+    height: 20px;
+    /* display: inline; */
+}
+.logoPos{
+    display: inline;
+    
+}
+
+.container-bg {
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('../img/banner\ img.jpg');
+    background-size: cover;
+    background-position: center;
+    height:632px;
+    /* Add more background properties as needed */
+  }
+  .contentcolr{
+    color: white;
+  }
+  .m-b-20{
+    margin-top: 20px;
+
+  }
+  .m-b-40{
+    color: white;
+    margin-top: 40px;
+  }
+  
+
+.btn-outline-new-white{
+    margin-top: 40px;
+color:#cfa671!important;
+background-color: transparent!important;
+background-image: none!important;
+border-color:#cfa671!important ;
+   
+}
+.btn-outline-new-white:hover {
+    background-color:  #cfa671!important; /* Change background color on hover */
+   color: #fff!important;
+  }
+
+.headbg{
+    width: 100%!important;
+    height: 100px;
+    /* background-color: rgb(255 241 151); */
+    color: rgb(73, 1, 1);
+}
+.musicImg{
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.navmenu{
+    justify-content: center;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 21px;
+}
+.contentsetr{
+    margin-top: 220px!important;
+  
+}
+.imgcafe{
+    margin-top: 40px;
+    margin-left: 40px;
+    width:63%;
+    /* height:83%; */
+    height: auto;
+    
+}
+.text-center{
+    margin-top: 20px;
+}
+.container-mid{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('https://images.indianexpress.com/2023/12/food.jpg');
+    background-size: cover;
+    background-position: center;
+    height:437px;
+}
+.colosss{
+    color: white;
+}
+.menu-box{
+    /* padding: 70px 0px; */
+    padding: 0px 0px;
+    /* border: 1px solid black;  */
+}
+.heading-title {
+    margin-bottom: 50px;
+}
+.text-center {
+    text-align: center !important;
+}
+.heading-title h2 {
+    color: #010101;
+    font-size: 28px;
+    font-family: 'Arbutus Slab', serif;
+}
+.heading-title p {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0px;
+}
+.filter-button-group{
+border: 1px solid #e4e4e4;
+border-radius: 4px;
+display: inline-block;
+margin: 10px 15px ;
+}
+.filter-button-group button.active {
+    background: #cfa671;
+    color: #fff;
+    box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);
+}
+.filter-button-group button{
+letter-spacing: 1px;
+font-weight: 600;
+font-size: 14px;
+cursor: pointer;
+padding: 12px 40px;
+border: none;
+border-radius: 4px;
+text-transform: uppercase;
+color: black;
+background-color: #fff;
+}
+.special-list{
+    /* height: 840px; */
+    position: relative;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height:270px!important;
+}
+.gallery-single{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ccc;
+    margin: 30px 0px;
+}
+.why-text{
+    position:absolute;
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    right: 0;
+    padding: 12px 12px;
+    background-color: #cfa671;
+    transition: all 0.3s ease!important;
+
+}
+.gallery-box{
+    padding: 70px 0px;
+    /* border: 1px solid red; */
+}
+.pic-gallery{
+    margin-top: 30px;
+}
+.pic-gallery .lightbox img{
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+
+}
+.a{
+    text-decoration: none!important;
+    outline: none!important;
+    transition: all .3s ease-in-out;
+}
+.customer-reviews-box{
+    padding: 70px 0px;
+}
+.carousel{
+    position: relative;
+}
+.contact-imfo-box{
+    padding: 30px 0;
+    background-color: #cfa671;
+
+}
+.contact-imfo-box i {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    color: #d0a772;
+    font-size: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.fa{
+
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.contact-imfo-box h4 {
+    margin: 0px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+}
+.contact-imfo-box p {
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+}
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+.fa-volume-control-phone:before {
+    content: "\f2a0";
+}
+.fa-map-marker:before {
+    content: "\f041";
+}
+.fa-envelope:before {
+    content: "\f0e0";
+}
+.footer-area{
+padding-top: 50px;
+padding-bottom: 0;
+}
+.bg-f {
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://time.com/shopping/static/98df093eb5bc7ce23b01f47bb189d328/57e17/best-dry-dog-foods.jpg");
+    background-attachment: scroll;
+    background-clip: initial;
+    color:white;
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.footer-area h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
+    margin-bottom: 10px;
+}
+.footer-area p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.footer-area .container {
+    position: relative;
+    z-index: 1;
+}
+.footer-area p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding-bottom: 10px;
+}
+.footer-area p a {
+    font-size: 18px;
+    color: #fff;
+}
+.subscribe_form {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+.subscribe_form .form_input {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    font-size: 19px;
+    line-height: 50px;
+    padding: 0 10px;
+    float: left;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.submit{
+    background-color: #d0a772;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+   
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    float: left!important;
+}
+.subscribe_form .form_input {
+    display: block!important;
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    color: #fff!important;
+    border: none!important;
+    font-size: 19px!important;
+    line-height: 50px!important;
+    padding: 0 10px!important;
+    float: left!important;
+    width: 100%;
+    transition: all 0.5s ease-in-out!important;
+}
+.f-social{
+    padding-bottom: 10%!important;
+    margin: 0px!important;
+    margin-top: 20px!important;
+}
+.list-inline{
+    padding-left: 0px!important;
+    list-style: none!important;
+}
+
+.list-inline-item {
+    display: inline-block;
+    margin-top: 20px!important;
+    margin-right: 7.5rem;
+}
+.f-social li a {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: 10px;
+}
+.copyright {
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    background-color: #010101;
+    border-top: 1px dashed rgba(207, 166, 113);
+    padding: 30px 0;
+    z-index: 1;
+}
+.copyright .company-name{
+text-align: center;
+margin: 16px;
+}
+.top-navbar {
+    position: relative;
+    z-index: 10;
+}
+.top-navbar .navbar {
+    padding: 0px 0px;
+    position: fixed;
+    width: 100%;
+    transition: height .3s ease-out, background .3s ease-out, box-shadow .3s ease-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 100;
+}
+.Smenu-bg {
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('../img/menuspcl.jpg');
+    background-size: cover;
+    background-position: center;
+    height:400px;
+    /* Add more background properties as needed */
+  }
+ .timepicker{
+    margin-top: 15px;
+
+ }
+ .react-time-picker__wrapper{
+    border: none!important; 
+ }
+
+ .datepicker-input{
+    width: 100%!important;
+ }
+ .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #d0a772;
+    color: #fff;
+    border-radius: 4px;
+}
+.top-navbar .navbar-light .navbar-nav .nav-link {
+    color: #010101;
+    font-size: 18px;
+    padding: 0px 20px;
+    border-radius: 4px;
+}
