@@ -50,91 +50,84 @@ function contact() {
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <Formik
-              initialValues={initialValues}
-              validationSchema={validationSchema}
-              onSubmit={handleSubmit}
-            >
-              {({ dirty, isValid }) => (
-                <form action="#" method="post" id="contactForm">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          name="name"
-                          placeholder="Your Name"
-                          type="text"
-                          id="name"
-                          className="form-control"
-                          required
-                          style={{ marginTop: "15px" }}
-                        ></input>
-                        <div className="help-block with-errors"></div>
-                      </div>
-                    </div>
+          <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={handleSubmit}
+    >
+      {({ dirty, isValid }) => (
+        <Form id="contactForm">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="form-group">
+                <Field
+                  name="name"
+                  placeholder="Your Name"
+                  type="text"
+                  className="form-control"
+                  style={{ marginTop: "15px" }}
+                />
+                <ErrorMessage name="name" component="div" className="help-block with-errors errors-filed" />
+              </div>
+            </div>
 
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          name="email"
-                          placeholder="Your Email"
-                          type="text"
-                          id="email"
-                          className="form-control"
-                          required
-                          style={{ marginTop: "15px" }}
-                        ></input>
-                        <div className="help-block with-errors"></div>
-                      </div>
-                    </div>
+            <div className="col-md-12">
+              <div className="form-group">
+                <Field
+                  name="email"
+                  placeholder="Your Email"
+                  type="text"
+                  className="form-control"
+                  style={{ marginTop: "15px" }}
+                />
+                <ErrorMessage name="email" component="div" className="help-block with-errors errors-filed" />
+              </div>
+            </div>
 
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <select
-                          name="YourPersonSelect"
-                          placeholder="Your Person Select"
-                          id="guest"
-                          className="custom-select d-block form-control"
-                          required
-                          style={{ marginTop: "15px" }}
-                        >
-                          <option disabled="" selected="">
-                            Please Select Person*
-                          </option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                      </div>
-                    </div>
+            <div className="col-md-12">
+              <div className="form-group">
+                <Field
+                  as="select"
+                  name="YourPersonSelect"
+                  placeholder="Your Person Select"
+                  className="custom-select d-block form-control"
+                  style={{ marginTop: "15px" }}
+                >
+                  <option disabled="" selected="">
+                    Please Select Person*
+                  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </Field>
+                <ErrorMessage name="YourPersonSelect" component="div" className="help-block with-errors errors-filed" />
+              </div>
+            </div>
 
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <textarea
-                          class="form-control"
-                          name="message"
-                          placeholder="Your Message"
-                          id="exampleFormControlTextarea1"
-                          rows="4"
-                          required
-                          style={{ marginTop: "15px" }}
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <a
-                      className="btn btn-lg btn-circle btn-outline-new-white"
-                      href=""
-                    >
-                      SEND MESSAGE
-                    </a>
-                  </p>
-                </form>
-              )}
-            </Formik>
+            <div className="col-md-12">
+              <div className="form-group">
+                <Field
+                  as="textarea"
+                  className="form-control"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="4"
+                  style={{ marginTop: "15px" }}
+                />
+                <ErrorMessage name="message" component="div" className="help-block with-errors errors-filed" />
+              </div>
+            </div>
+          </div>
+          <p>
+            <button type="submit" className="btn btn-lg btn-circle btn-outline-new-white">
+              SEND MESSAGE
+            </button>
+          </p>
+        </Form>
+      )}
+    </Formik>
           </div>
         </div>{" "}
       </div>

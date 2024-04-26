@@ -1,6 +1,14 @@
 import React from 'react'
 import Footer from "../component/Footer"
 
+import Drink2 from "./../img/drink2.jpg"
+
+import Lunch1 from "./../img/food1.jpg"
+
+import Lunch3 from "./../img/food3.jpg"
+import Dinner1 from "./../img/dinner1.jpg"
+import Dinner2 from "./../img/dinner2.jpg"
+import Dinner3 from "./../img/dinner3.jpg"
 
 
 function gallery() {
@@ -35,7 +43,7 @@ function gallery() {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Dinner1}
                       alt="website template image"
                     ></img>
                   </a>
@@ -44,7 +52,7 @@ function gallery() {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Lunch1}
                       alt="website template image"
                     ></img>
                   </a>
@@ -53,7 +61,7 @@ function gallery() {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Dinner3}
                       alt="website template image"
                     ></img>
                   </a>
@@ -62,7 +70,7 @@ function gallery() {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Lunch3}
                       alt="website template image"
                     ></img>
                   </a>
@@ -71,7 +79,7 @@ function gallery() {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Dinner2}
                       alt="website template image"
                     ></img>
                   </a>
@@ -80,7 +88,7 @@ function gallery() {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Drink2}
                       alt="website template image"
                     ></img>
                   </a>

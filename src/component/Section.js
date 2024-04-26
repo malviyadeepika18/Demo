@@ -1,9 +1,58 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Footer from "../component/Footer"
+import Drink from "./../img/drink1.jpg"
+import Drink2 from "./../img/drink2.jpg"
+import Drink3 from "./../img/drink3.jpg"
+import Lunch1 from "./../img/food1.jpg"
+import Lunch2 from "./../img/food2.jpg"
+import Lunch3 from "./../img/food3.jpg"
+import Dinner1 from "./../img/dinner1.jpg"
+import Dinner2 from "./../img/dinner2.jpg"
+import Dinner3 from "./../img/dinner3.jpg"
+
+
+
+const menuItems =[
+  {category:"drink" ,image:Drink
+
+},
+{category:"drink" ,image:Drink2
+
+},
+{category:"drink" ,image:Drink3
+
+},
+
+{category:"lunch" ,image:Lunch1
+
+},
+{category:"lunch" ,image:Lunch2
+
+},
+{category:"lunch" ,image:Lunch3
+
+},
+{category:"dinner" ,image:Dinner1
+
+},
+{category:"dinner" ,image:Dinner2
+
+},
+{category:"dinner" ,image:Dinner3
+
+},
+]
 
 
 const Section1 = () => {
+const [filter,setFilter] = useState("*");
+
+const handleFilterClick = (filterValue) => {
+  console.log('Filter clicked:', filterValue); 
+  setFilter(filterValue);
+};
+
   return (
     <div>
       <div className="container-fluid container-bg">
@@ -92,93 +141,35 @@ const Section1 = () => {
             <div className="col-lg-12">
               <div className="special-menu text-center">
                 <div className="button-group filter-button-group">
-                  <button class="active" data-filter="*">
+                  <button className={filter === '*' ? 'active' : ''} onClick={() => handleFilterClick('*')}>
                     All
                   </button>
-                  <button data-filter=".drink">DRINKS</button>
-                  <button data-filter=".lunch">LUNCH</button>
-                  <button data-filter=".dinner">DINNER</button>
+                  <button  className={filter === 'drink' ? 'active' : ''} onClick={() => handleFilterClick('drink')}>DRINKS</button>
+                  <button  className={filter === 'lunch' ? 'active' : ''} onClick={() => handleFilterClick('lunch')}>LUNCH</button>
+                  <button className={filter === 'dinner' ? 'active' : ''} onClick={() => handleFilterClick('dinner')}>DINNER</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="row special-list ">
-            <div className="col-lg-4 col-md-6 special-grid drinks">
+          <div className="row special-list">
+        {menuItems
+          .filter(item => filter === '*' || item.category === filter)
+          .map((item, index) => (
+            <div className={`col-lg-4 col-md-6 special-grid ${item.category}`} key={index}>
               <div className="gallery-single fix">
                 <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
+                  src={item.image}
+                  alt={`Image ${index}`}
                   className="img-fluid"
                 />
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 special-grid drinks">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 special-grid drinks">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 special-grid lunch">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 special-grid lunch">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 special-grid lunch">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 special-grid dinner">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 special-grid dinner">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 special-grid dinner">
-              <div className="gallery-single fix">
-                <img
-                  src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/ggtovjisp8p652vvof6z"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
+          ))}
+           
           </div>
         </div>
+
         <div className="gallery-box">
           <div className="container-fluid">
             <div className="row">
@@ -198,7 +189,7 @@ const Section1 = () => {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Dinner1}
                       alt="website template image"
                     ></img>
                   </a>
@@ -207,7 +198,7 @@ const Section1 = () => {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Lunch1}
                       alt="website template image"
                     ></img>
                   </a>
@@ -216,7 +207,7 @@ const Section1 = () => {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Dinner3}
                       alt="website template image"
                     ></img>
                   </a>
@@ -225,7 +216,7 @@ const Section1 = () => {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Lunch3}
                       alt="website template image"
                     ></img>
                   </a>
@@ -234,7 +225,7 @@ const Section1 = () => {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Dinner2}
                       alt="website template image"
                     ></img>
                   </a>
@@ -243,7 +234,7 @@ const Section1 = () => {
                   <a class="lightbox" href="assets/images/gallery-img-01.jpg">
                     <img
                       class="img-fluid"
-                      src="https://assets.bonappetit.com/photos/5a4fdd23f661865e1bb310f5/16:9/w_2560%2Cc_limit/all-day-cafe-dish.jpg"
+                      src={Drink2}
                       alt="website template image"
                     ></img>
                   </a>

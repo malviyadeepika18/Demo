@@ -444,7 +444,7 @@ margin: 16px;
     border: none!important; 
  }
 
- .datepicker-input{
+ .react-datepicker-wrapper {
     width: 100%!important;
  }
  .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
@@ -457,4 +457,14 @@ margin: 16px;
     font-size: 18px;
     padding: 0px 20px;
     border-radius: 4px;
+}
+.errors-filed{
+    color: red;
+    text-align: left;
+}
+.daatepick{
+width: 100%;
+}
+.head-mb-15{
+margin-bottom: 15px;
 }
